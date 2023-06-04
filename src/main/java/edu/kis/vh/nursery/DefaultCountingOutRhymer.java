@@ -5,14 +5,6 @@ public class DefaultCountingOutRhymer {
     private static final int ZERO_ELEMENTS = -1;
     private final int[] numbers = new int[TOTAL_NUMBERS];
 
-    public static int getTotalNumbers() {
-        return TOTAL_NUMBERS;
-    }
-
-    public static int getZeroElements() {
-        return ZERO_ELEMENTS;
-    }
-
     public int getTotal() {
         return total;
     }
