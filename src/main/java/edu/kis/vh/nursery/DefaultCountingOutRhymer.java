@@ -11,6 +11,17 @@ public class DefaultCountingOutRhymer {
 
     private int total = ZERO_ELEMENTS;
 
+    public int[] getNumbers() {
+        return numbers;
+    }
+
+    public void setNumbers(int[] numbers) {
+        this.numbers = numbers;
+    }
+
+    public void setTotal(int total) {
+        this.total = total;
+    }
     public void countIn(int in) {
         if (!isFull())
             numbers[++total] = in;
