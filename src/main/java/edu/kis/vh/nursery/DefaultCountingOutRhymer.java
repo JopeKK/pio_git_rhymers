@@ -5,13 +5,11 @@ public class DefaultCountingOutRhymer {
     private static final int DEFAULT = -1;
     private static final int EMPTY = -1;
     private final int[] numbers = new int[TOTAL_NUMBERS];
+    private int total = -1;
 
     public int getTotal() {
         return total;
     }
-
-    private int total = -1;
-
     public void countIn(int in) {
         if (!isFull())
             numbers[++total] = in;
